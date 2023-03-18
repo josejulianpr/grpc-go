@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-option go_package= "confproto";
+option go_package= "github.com/josejulianpr/grpc-go/proto-grpc/confproto";
 
 package confproto;
 
