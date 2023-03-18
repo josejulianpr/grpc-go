@@ -1,0 +1,27 @@
+syntax = "proto3";
+
+option go_package= "confproto";
+
+package confproto;
+
+service commentService {
+    rpc GetComment (GetRequest) returns (GetResponse){}
+    rpc CreateComment (CreateRequest) returns (CreateResponse){}
+}
+
+message GetRequest {
+    string email = 1;
+}
+
+message GetResponse{
+    string comment = 1;
+}
+
+message CreateRequest {
+    string email = 1;
+    string comment = 2;
+}
+
+message CreateResponse{
+    string id = 1;
+}
